@@ -1,0 +1,84 @@
+<!-- include header -->
+<%- include('include/_header') %>
+<!-- /include header -->
+
+
+
+<section id="header">
+    <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+
+    <div>
+        <ul id="navbar">
+            <li><a href="/">Home</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a class="active" href="/orders">Orders</a></li>
+            <li id="lg-bag"><a href="/cart"><i class="fas fa-shopping-cart"></i></a></li>
+            <a href="#" id="close"><i class="far fa-window-close"></i></a>
+        </ul>
+    </div>
+    <div id="mobile">
+        <a href="/cart"><i class="fas fa-shopping-cart"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+    </div>
+</section>
+
+
+
+
+<section id="page-header">
+    <h2>#BuyFromHome</h2>
+    <p>Save more with coupons & up to 50% off!</p>
+    
+</section>
+
+<main id="site-main">
+    <div class="container">
+        <form action="/cart">
+            <table class="table">
+                <thread class="thread-dark">
+                    <tr>
+                        <th>Order Id</th>
+                        <th>Update</th>
+                        <th>Remove</th>
+                    </tr>
+                </thread>
+                <tbody>
+                    <%for(var i=0;i < details.length;i++){%>
+                        <tr>
+                            <td><%= details[i]._id%></td>
+                            <td>
+                                <a href="/UpdateDetails?id=<%= details[i]._id%>">
+                                    <span class="text-gradient"><i class="fas fa-edit"></i></span>
+                                </a>
+                            </td>
+                            <td>
+                                <a onclick="removeFromOrders('<%=details[i]._id %>')" class="btn border-shadow delete">
+                                    <span class="text-gradient"><i class="fas fa-times"></i></span>
+                                </a>
+                            </td>
+                        </tr>
+                    <%}%>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</main>
+
+
+<script src="js/script.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
