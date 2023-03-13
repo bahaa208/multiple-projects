@@ -1,0 +1,9 @@
+{ "name"  : "Avraham",
+  "age"   : 175,
+  "wives" : ["Hagar", "Sarah", "Ketura"],
+  "issue" : {"Hagar" : ["Yishmael"],
+             "Sarah" : ["Yitskhak"],
+             "Ketura" : ["Zimran", "Jokshan", "Medan", "Midian", "Ishbak", "Shuah"]
+            }
+} 
+            
