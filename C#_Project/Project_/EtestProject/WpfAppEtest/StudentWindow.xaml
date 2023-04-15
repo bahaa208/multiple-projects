@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfAppEtest.StudentWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppEtest"
+        mc:Ignorable="d"
+        Title="StudentWindow" Height="450" Width="800" Background="Olive">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="233*"/>
+            <ColumnDefinition Width="567*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="91*"/>
+            <RowDefinition Height="69*"/>
+            <RowDefinition Height="274*"/>
+        </Grid.RowDefinitions>
+        <TextBox Name="nameExam" FontWeight="Bold" HorizontalAlignment="Left" Margin="24,10,0,10"   Width="286" Grid.Row="1" Grid.Column="1" />
+        <Label Content="  name of the Exam :" FontSize="20" FontWeight="ExtraBold" HorizontalAlignment="Center" VerticalAlignment="Center" Height="49" Width="213" Grid.Row="1"/>
+        <TextBlock Name="erorrExamTime" Foreground="DarkRed"  HorizontalAlignment="Left" Margin="19,46,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="202" Width="538" FontSize="22" Grid.Row="2" Grid.Column="1"/>
+        <Button Content="start" FontSize="20" FontWeight="ExtraBold" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Center" Height="58" Width="112" Margin="45,0,0,0" Click="Button_Click"/>
+        <Label Content="                          Welcom student" FontSize="20" Foreground="Yellow" FontWeight="ExtraBold" HorizontalAlignment="Left" VerticalAlignment="Center" Height="49" Width="557" Grid.Column="1"/>
+
+    </Grid>
+</Window>

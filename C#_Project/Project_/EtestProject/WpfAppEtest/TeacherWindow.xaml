@@ -1,0 +1,56 @@
+﻿<Window x:Class="WpfAppEtest.TeacherWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppEtest"
+        mc:Ignorable="d"
+        Title="TeacherWindow" Height="450" Width="800">
+    <Grid Background="Beige">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="63*"/>
+            <RowDefinition Height="173*"/>
+            <RowDefinition Height="44*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="54*"/>
+            <RowDefinition Height="11*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="157*"/>
+            <ColumnDefinition Width="347*"/>
+            <ColumnDefinition Width="101*"/>
+            <ColumnDefinition Width="195*"/>
+        </Grid.ColumnDefinitions>
+        <Label FontWeight="Bold" Content="search for exam" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Height="26" Width="99"/>
+
+
+
+
+
+
+        <Button FontWeight="Bold" Content="add Exam" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35" Width="80" Click="Button_AddExam" Grid.Row="3"/>
+        <Button FontWeight="Bold" Content="Edit Exam" HorizontalAlignment="Center" VerticalAlignment="Top" Height="35" Width="80" Click="Edit" Grid.Row="4" Margin="0,6,0,0"/>
+        <TextBox Name="screen" FontWeight="Bold" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Hello Teacher " VerticalAlignment="Top" Width="326" Height="414" Grid.Column="1" Margin="0,10,0,0" Grid.RowSpan="7"/>
+        <TextBox  FontWeight="Bold" Name="SearchBox" HorizontalAlignment="Left" Margin="18,36,0,0" TextWrapping="Wrap" TextChanged="OnSearchBoxTextChanged" Text="" VerticalAlignment="Top" Width="125" Height="23"/>
+        <ListBox Name="MyListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="18,12,14,73" Grid.Row="1"/>
+        <TextBox Name="numberQuestion" TextChanged="select_number_ofQ"  HorizontalAlignment="Left" Margin="3,32,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="159" Height="27" Grid.Column="3"/>
+        <TextBox Name="HeadOfQuestion"  FontWeight="Bold" HorizontalAlignment="Left" Margin="3,1,0,0" TextWrapping="Wrap"   VerticalAlignment="Top" Width="159" Height="56" TextChanged="HeadOfQuestion_TextChanged" Grid.Column="3" Grid.Row="1"/>
+        <ListBox Name="MyListSection" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="3,91,33,4" SelectionChanged="MyListSection_SelectionChanged" Grid.Column="3" Grid.RowSpan="3" Grid.Row="1"/>
+        <Label FontWeight="Bold" Content="Question Num:"   HorizontalAlignment="Center" Margin="0,32,0,0" VerticalAlignment="Top" Width="101" FontSize="12" Grid.Column="2" Height="26"/>
+        <Label FontWeight="Bold" Content="The Question:" HorizontalAlignment="Left" Margin="3,19,0,0" VerticalAlignment="Top" Grid.Column="2" Height="26" Width="88" Grid.Row="1"/>
+        <Label FontWeight="Bold" Content="Sections :" HorizontalAlignment="Left" Margin="34,141,0,0" VerticalAlignment="Top" Grid.Column="2" Height="26" Width="63" Grid.Row="1"/>
+        <Button FontWeight="Bold" Content="update" HorizontalAlignment="Left" Margin="103,20,0,0" VerticalAlignment="Top" Height="25" Width="48" Click="UpdateQ" Grid.Column="3" Grid.Row="5" RenderTransformOrigin="0.562,0.326"/>
+        <TextBox  FontWeight="Bold" Name="newSection"  HorizontalAlignment="Left" Margin="3,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="159" Grid.Column="3" Height="23" Grid.Row="4"/>
+        <TextBox Name="trueSection" HorizontalAlignment="Left" Margin="3,62,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="159" Grid.Column="3" Height="24" Grid.Row="1"/>
+        <Label FontWeight="Bold" Content="true section:" HorizontalAlignment="Left" Margin="3,61,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.072,1.413" Grid.Column="2" Height="26" Width="88" Grid.Row="1"/>
+        <Label FontWeight="Bold" Content="Edit section:" HorizontalAlignment="Left" Margin="3,0,0,0" VerticalAlignment="Center" Grid.Column="2" Height="26" Width="88" Grid.Row="4"/>
+        <TextBlock Name="TextBlock" Foreground="Red" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="20" Width="212" Grid.Column="2" Grid.Row="4" Margin="40,49,0,0" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+        <Button  FontWeight="Bold" Content="add question" HorizontalAlignment="Left" Margin="3,20,0,0" VerticalAlignment="Top"  Height="25" Width="95" Click="ButtonAddQusetion" Grid.Column="3" Grid.Row="5"/>
+        <Button FontWeight="Bold" Content="delete Exam" HorizontalAlignment="Center" VerticalAlignment="Top" Height="35" Width="80" Click="Button_Click_delete_exam" Grid.Row="5" Margin="0,5,0,0"/>
+        <Button FontWeight="Bold" Content="LoadData" HorizontalAlignment="Center" VerticalAlignment="Center" Height="35" Width="80" Click="Button_Click_LoadData" Grid.Row="2"/>
+        <Button FontWeight="Bold" Content="ShowGrade" HorizontalAlignment="Center" VerticalAlignment="Top" Height="35" Width="80" Click="Button_Click_ShowGrade" Margin="0,128,0,0" Grid.Row="1"/>
+        <Button FontWeight="Bold" Content="delete question" HorizontalAlignment="Center" Margin="0,20,0,0" VerticalAlignment="Top" Height="25" Width="94" Click="DeleteQuestion" Grid.Column="2" Grid.Row="5" RenderTransformOrigin="0.562,0.326"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EtestProject", "EtestProject\EtestProject.csproj", "{32150C77-E051-4E2E-BE60-9DFD7A2BAEB7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfAppEtest", "WpfAppEtest\WpfAppEtest.csproj", "{CA78EAAC-57D7-4762-819E-2CBA2A970D80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32150C77-E051-4E2E-BE60-9DFD7A2BAEB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32150C77-E051-4E2E-BE60-9DFD7A2BAEB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32150C77-E051-4E2E-BE60-9DFD7A2BAEB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32150C77-E051-4E2E-BE60-9DFD7A2BAEB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA78EAAC-57D7-4762-819E-2CBA2A970D80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA78EAAC-57D7-4762-819E-2CBA2A970D80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA78EAAC-57D7-4762-819E-2CBA2A970D80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA78EAAC-57D7-4762-819E-2CBA2A970D80}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5E7370C-9DC1-4D61-9ECC-D102120922E3}
+	EndGlobalSection
+EndGlobal
